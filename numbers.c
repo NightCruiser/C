@@ -42,7 +42,7 @@ int main( int argc, char *argv[] ) {
         } else {
             printf( "iSwapFailed\n" ) ;
         }
-        //end of debug
+        
 
     }
     printf( "A = %ld\nB = %ld\n", A, B ) ;
