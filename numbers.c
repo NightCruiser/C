@@ -35,7 +35,7 @@ int main( int argc, char *argv[] ) {
    //}
     if ( A > B ) {
 
-        int Result = iswap( &C, &B ) ;
+        int Result = iswap( &A, &B ) ;
         //debug
         if ( Result >= 0 ) {
             printf( "iswapSuccess\n" ) ;
