@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int iswap( long int **P1, long int *P2 ) {
+int iswap( long int *P1, long int *P2 ) {
 
     long int BufferAB = *P2 ;
     //printf( "iSwap Called\nR1 = %ld\nR2 = %ld\n", *P1, *P2 ) ;
-    *P2 = **P1 ;
-    **P1 = BufferAB ;
+    *P2 = *P1 ;
+    *P1 = BufferAB ;
     //printf("R1 = %ld\nR2 = %ld\n", *P1, *P2 );
 
     return 0 ;
@@ -31,10 +31,9 @@ int main( int argc, char *argv[] ) {
    // if ( A > B ) {
    //     long int BufferAB = B ;
    //     B = A ;
-    //    A = BufferAB ;
-    //}
+   //    A = BufferAB ;
+   //}
     if ( A > B ) {
-        long int *C = &A;
 
         int Result = iswap( &C, &B ) ;
         //debug
